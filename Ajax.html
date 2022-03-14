@@ -1,0 +1,16 @@
+<script>
+    const xhttp = new XMLHttpRequest();
+    function go(){
+        xhttp.open("GET", "brad66.php");
+
+        xhttp.onload = function() {
+            here.innerHTML = this.responseText;    
+        }
+
+        xhttp.send();
+    }
+
+</script>
+<input type="button" onclick="go()" value="Click Me">
+<hr>
+<div id="here"></div>
